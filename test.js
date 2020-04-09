@@ -4,7 +4,9 @@ module.exports = function(sequelize, DataTypes) {
       id: {
         type : DataTypes.INTEGER(10),
         allowNull: false,
-        primaryKey: true
+        primaryKey: true,
+        autoIncrement : true
+        
 
       },
 
@@ -12,7 +14,15 @@ module.exports = function(sequelize, DataTypes) {
         type: DataTypes.STRING(20),
         allowNull: false,
       },
-    }, {
+
+  item : {
+    type: DataTypes.STRING(30),
+    allowNull: false
+  },
+
+    },
+      
+    {
       tableName: 'aman'
     });
   };
