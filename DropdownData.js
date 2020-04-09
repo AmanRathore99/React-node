@@ -1,0 +1,1 @@
+export const Item = ['Freeze','Cooler','WashingMachine','AC','TV']
