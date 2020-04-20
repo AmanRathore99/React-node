@@ -2,7 +2,7 @@ module.exports = function(sequelize, DataTypes) {
     return sequelize.define('aman', {
 
       id: {
-        type : DataTypes.INTEGER(10),
+        type : DataTypes.INTEGER(100),
         allowNull: false,
         primaryKey: true,
         autoIncrement : true
@@ -11,12 +11,26 @@ module.exports = function(sequelize, DataTypes) {
       },
 
       username: {
-        type: DataTypes.STRING(20),
+        type: DataTypes.STRING(50),
         allowNull: false,
       },
 
-  item : {
-    type: DataTypes.STRING(30),
+      mail: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+      },
+      contact: {
+        type: DataTypes.INTEGER(50),
+        allowNull: false,
+      },
+
+      address: {
+        type: DataTypes.STRING(50),
+        allowNull: false,
+      },
+
+     item : {
+    type: DataTypes.STRING(50),
     allowNull: false
   },
 
