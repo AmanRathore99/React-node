@@ -20,11 +20,14 @@ const sequelize = new Sequelize("company", "root", "root", {
 
     }
 });
-
 const aman = sequelize.import('./../models/test.js');
 
 // const engineer = sequelize.import ('./../models/engineer.js');
- 
+
+
+  sequelize.query(
+        
+ )
      
 //Authentication for registration of username
 console.log("enter in backend");
@@ -34,7 +37,11 @@ instance.post('/api/obj', (request, response) => {
      
       //  'id' : request.body.id,
         'username' : request.body.username,
+        'mail' : request.body.mail,
+        'contact' : request.body.contact,
+        'address' : request.body.address,
         'item': request.body.item
+        
       
  }
  
